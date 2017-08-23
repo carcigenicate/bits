@@ -1,0 +1,1 @@
+(ns g(:require[quil.core :as q]))(def w 1e3)(def h 1e3)(def f 99)(def b(atom{:x f :y f :n 1 :m 1}))(q/defsketch . :size[w h]:setup #(do(q/text-font(q/create-font""f))(q/fill 255 255 255)):draw #(let[s 9{:keys [x y n m]}@b c(+ x(* n s))u(+ y(* m s))](q/background 0 0 0)(reset! b{:x c :y u :n(if(< 0 c(- w f))n(* -1 n)):m(if(<(+ 0 f)u h)m(* -1 m))})(q/text"O"(:x @b)(:y @b))))

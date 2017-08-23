@@ -1,0 +1,3 @@
+0 1(let[u #(apply str %)a"./src/bits/golf/self_modifying/test.clj"p #(Long/parseLong(u %))l(fn[v](split-with #(Character/isDigit %)v))c(slurp a)[n[_ & r]](l c)[m r](l r)b(+(p n)(p m))](println b)(spit a(str(p m)" "b(u r))))
+
+0 1(let[u #(apply str %)a"./src/s.clj"p #(Long/parseLong(u %))l(fn[v](split-with #(Character/isDigit %)v))c(slurp a)[n[_ & r]](l c)[m r](l r)b(+(p n)(p m))](println b)(spit a(str(p m)" "b(u r))))
